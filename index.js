@@ -5,7 +5,7 @@ const util = require ('util');
 const writeFileAsync = util.promisify(fs.writeFile)
 
 
-const userInputs = () => {
+const promptUser = () => {
     return inquirer.prompt([
             {
                 type: 'input',
@@ -57,5 +57,22 @@ const userInputs = () => {
             },
             
         ]);
+        
 };
 
+
+
+const generateMD = answers => {
+return `
+# ${answers.projectname}
+    `
+};
+
+promptUser()
+.then(answers => {
+    const markdown = generateMD(answers);
+    return writeFileAsync('randomread.md', markdown);
+})
+.then(() => {
+    console.log('Successfully wrote to randomread.me')
+}).catch(err => console.log(err));
