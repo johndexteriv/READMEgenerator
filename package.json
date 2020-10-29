@@ -1,0 +1,22 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "command line application that quickly generates a professional readme based off user inputs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndexteriv/READMEgenerator.git"
+  },
+  "author": "Dexter Garner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johndexteriv/READMEgenerator/issues"
+  },
+  "homepage": "https://github.com/johndexteriv/READMEgenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
