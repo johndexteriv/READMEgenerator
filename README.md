@@ -1,6 +1,8 @@
-# Node.JS ReadMe.md Generator
+# Node.JS readme.md Generator
 
 ## Description
+
+[Repository Link](https://github.com/johndexteriv/READMEgenerator)
 
 A command line node.js application that generates a clean README.md file based off user inputs to inquirer prompted questions.
 
@@ -73,3 +75,8 @@ You can find more of my work at [JohnDexterIV](https://github.com/johndexteriv)
 
 This application is covered by the MIT License
 
+![Command Line](/images/CommandLine.png)
+
+![Sample Read](/images/SampleReadme.png)
+
+![Preview Read](/images/SamplePreview.png)
