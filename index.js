@@ -31,11 +31,11 @@ const promptUser = () => {
                 type: 'list',
                 name: 'license',
                 message: 'What kind of license would you like your project to have?',
-                choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "NONE"]
+                choices: ["MIT", "APACHE2.0", "GPL3.0", "BSD3", "NONE"]
             },
             {
                 type: 'input',
-                name: 'command',
+                name: 'install',
                 message: 'What command should be run to install dependencies?',
                 default: "npm i"
             },
@@ -47,7 +47,7 @@ const promptUser = () => {
             },
             {
                 type: 'input',
-                name: 'userinfo',
+                name: 'usage',
                 message: 'What does the user need to know about using the repo?'
             },
             {
@@ -65,6 +65,55 @@ const promptUser = () => {
 const generateMD = answers => {
 return `
 # ${answers.projectname}
+
+![License](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+
+## Description
+
+${answers.description}
+
+## Table of Contents
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [Contributing](#contibuting)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+## Installation
+
+> ${answers.install}
+
+## Usage
+
+${answers.usage}
+
+## License
+![License](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+
+This application is covered by the ${answers.license} license.
+
+## Contributing
+
+${answers.contribute}
+
+## Tests
+
+> ${answers.test}
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at
+${answers.email}. You can find more of my work at [${answers.username}](https://github.com/${answers.username})
+
+
+
+
+
     `
 };
 
