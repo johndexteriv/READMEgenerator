@@ -75,6 +75,10 @@ You can find more of my work at [JohnDexterIV](https://github.com/johndexteriv)
 
 This application is covered by the MIT License
 
+[ScreenCast walk through of application](https://drive.google.com/file/d/14uM23NIwnwn9lLhqxJOj_Y9Ael-9w77W/view?usp=sharing)
+
+![Walk Through Gif](/images/ReadMeGif.gif)
+
 ![Command Line](/images/CommandLine.png)
 
 ![Sample Read](/images/SampleReadme.png)
